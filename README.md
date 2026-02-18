@@ -44,6 +44,7 @@ The architecture is designed with **scalability, low-latency, and modularity** i
                 
 Client ────────▶   REST API            
                        ↓ 
+                       
             ↓  ---------------  ↓
  
         Business            WebSocket    
@@ -115,6 +116,7 @@ Connect via Socket.IO
 Listen for real-time events on channel: event
 
 Emit new events to newEvent
+
 
 
 
