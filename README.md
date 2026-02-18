@@ -1,4 +1,4 @@
-Real-Time Analytics Service
+
 # Real-Time Analytics Service API
 
 A **scalable, event-driven real-time analytics backend** built with **NestJS**, designed to track, process, and broadcast live user events with low latency. The system supports **JWT-based authentication**, **role-based authorization**, **PostgreSQL-based persistence**, and **real-time data streaming via WebSockets (Socket.IO)**.
@@ -42,6 +42,7 @@ The architecture is designed with **scalability, low-latency, and modularity** i
 
 Client → REST API → Business Logic → PostgreSQL
              ↓
+             
          WebSocket Server → Live Analytics Dashboard
 
 
@@ -105,6 +106,7 @@ Connect via Socket.IO
 Listen for real-time events on channel: event
 
 Emit new events to newEvent
+
 
 
 
