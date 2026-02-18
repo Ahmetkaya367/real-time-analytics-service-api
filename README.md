@@ -40,9 +40,19 @@ The architecture is designed with **scalability, low-latency, and modularity** i
 ## System Architecture
 
 
-Client → REST API → Business Logic → PostgreSQL
-          ↓
-      WebSocket Server → Live Analytics Dashboard
+
+                
+Client ────────▶   REST API            
+            ┌──────────┴──────────┐
+            ↓                     ↓
+ 
+        Business            WebSocket    
+         Logic               Server       
+  
+          ↓                      ↓
+      PostgreSQL            Live Analytics
+               
+                              Dashboard
 
 
 A NestJS-based backend application for tracking and broadcasting real-time user events. It supports JWT authentication, PostgreSQL for data storage, and WebSocket (Socket.IO) for live event streaming to connected clients.
@@ -105,6 +115,7 @@ Connect via Socket.IO
 Listen for real-time events on channel: event
 
 Emit new events to newEvent
+
 
 
 
